@@ -1,199 +1,157 @@
-/*
-* MAIN
-* - CSS principal do projeto
-*/
-
 @import url("_variables.css");
 
-html {
-  font-size: 62.5%;
-  font-family: "Poppins", sans-serif;
+
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: var(--background);
-  color: #fff;
+
+
+
+body{
+    background-color: var(--background);
+    color: #fff;
 }
 
-/*
-*
-* TIPOGRAFIA
-*
-*/
+/* Tipografias */
 
-h1,
-h2 {
-  font-weight: var(--fontWeightBold);
+h1,h2{
+    font-weight: var(--fontWeightBold);
 }
 
-h1 {
-  color: var(--colorH1);
-  font-size: 5.8rem;
+h1{
+    color: var(--colorH1);
+    font-size: 5.8rem;
+
 }
 
-h2 {
-  color: var(--colorH2);
-  font-size: 4.8rem;
+h2{
+    color: var(--colorH2);
+    font-size: 4.8rem;
+
 }
 
-h3 {
-  color: var(--colorH3);
-  font-weight: var(--fontWeightRegular);
-  font-size: 3.2rem;
+h3{
+    color: var(--colorH3);
+    font-weight: var(--fontWeightRegular);
+    font-size: 3.2rem;
 }
 
-h4 {
-  color: var(--colorH4);
-  font-weight: var(--fontWeightMedium);
-  font-size: 2.8rem;
+h4{
+    color:var(--colorH4);
+    font-weight: var(--fontWeightMedium);
+    font-size: 2.8rem;
 }
 
-p {
-  color: var(--colorP);
-  font-weight: var(--fontWeightLight);
-  font-size: 1.8rem;
+p{
+    color:var(--colorP);
+    font-weight: var(--fontWeightLight);
+    font-size: 1.8rem;
 }
 
-small {
-  color: var(--colorP);
-  font-weight: var(--fontWeightLight);
+small{
+  color: var(--colorP);  
+  font-weight:var(--fontWeightLight);
   font-size: 1.4rem;
 }
 
-strong {
-  color: var(--colorP);
-  font-weight: var(--fontWeightRegular);
-  font-size: 1.6rem;
+strong{
+  color: var(--colorP);  
+  font-weight:var(--fontWeightRegular);
+  font-size: 1.6rem;   
 }
 
-section {
-  margin: 200px 0;
+section{
+    margin: 200px 0;
 }
 
-/*MOBILE*/
-.primaryHeader .columnRight nav {
-  display: none;
-}
-
-.primaryHeader .columnLeft {
-  width: 20%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-}
-
-.primaryHeader .columnLeft button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.primaryHeader .columnLeft button svg {
-  stroke: var(--colorText);
-}
-
-.primaryHeader .columnLeft h2 {
-  font-size: 4rem;
-  font-weight: var(--fontWeightBold);
-}
-
-.primaryHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.primaryHeader .columnRight .btnOpenMenuMobile {
-  background-color: transparent;
-  border: none;
-}
-
-.primaryHeader .columnRight .btnOpenMenuMobile svg path {
-  stroke: var(--colorBtnOpenMenuMobile);
-}
-
-/*DESKTOP*/
-@media (min-width: 769px) {
-  .primaryHeader .columnRight .btnOpenMenuMobile {
-    display: none;
-  }
-
-  .primaryHeader .columnRight {
-    width: 80%;
-  }
-
-  .primaryHeader .columnRight nav {
+.primaryHeader{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
+    justify-content:space-between;
+    align-items: center;
+}
 
-  .primaryHeader .columnRight nav ul {
+.primaryHeader .columnLeft{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.primaryHeader .columnLeft button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.primaryHeader .columnLeft button svg{
+    stroke: var(--colorText)
+}
+    
+
+.primaryHeader .columnRight{
+    width: 80%;
+}
+
+.primaryHeader .columnLeft h2{
+    font-size: 4rem;
+    font-weight: var(--fontWeightBold);
+}
+
+.primaryHeader .columnRight nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
-  }
+}
 
-  .primaryHeader .columnRight nav ul li a {
+
+.primaryHeader .columnRight nav ul li a{
     font-size: 2rem;
     color: var(--colorPrimaryMenu);
     text-decoration: none;
-  }
+}
 
-  .primaryHeader .columnRight nav ul {
+.primaryHeader .columnRight nav ul{
     list-style: none;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1280px;
+}
+.container{
+    width: 1280px;
     margin: 0 auto;
-  }
+}
 
-  /*
-*
-* SECTION BANNER
-*
-*/
 
-  .sectionBanner {
+/* section BANNER */
+
+.sectionBanner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .sectionBanner .columnLeft h1 {
+.sectionBanner .columnLeft h1{
     font-size: 5.8rem;
     line-height: 7rem;
-  }
+}
 
-  .sectionBanner .columnLeft h1 span {
+.sectionBanner .columnLeft h1 span{
     background: var(--primaryGradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
-  .sectionBanner .columnRight img {
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
+.sectionBanner .columnRight img{
+    width: calc(100% - 9px);
+    height: calc(auto - 9px);
     border-radius: 100%;
-    /* 
-  Caso não consigam fazer border gradient com o pseudo elemento - before:
-  Deixo uma alternativa (menos compativel com navegadores mais antigos).
-  ----------->
-  border: 5px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(#743ad5, #d53a9d);
-  */
-  }
+}
 
-  .sectionBanner .columnRight {
+.sectionBanner .columnRight {
     position: relative;
     border-radius: 100%;
     overflow: hidden;
@@ -202,10 +160,10 @@ section {
     align-items: center;
     width: 349px;
     height: 349px;
-  }
+}
 
-  .sectionBanner .columnRight::before {
-    content: "";
+.sectionBanner .columnRight::before{
+    content:"";
     width: 100%;
     height: 100%;
     background: var(--primaryGradient);
@@ -214,304 +172,294 @@ section {
     position: absolute;
     z-index: -1;
     transform: rotate(-90deg);
-  }
 
-  /*
-*
-* SECTION STACK
-*
-*/
+}
 
-  .sectionStack header {
+/* Stack */
+
+.sectionStack header{
     text-align: center;
-  }
+}
 
-  .sectionStack header h2 {
+.section header h2{
     margin-bottom: 10px;
-  }
-  .sectionStack header h3 {
-    margin-top: 0;
-  }
+}
 
-  .sectionStack .stackImagesContainer {
+.section header h3{
+    margin-top: 0;
+}
+
+.sectionStack .stackImagesContainer{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     column-gap: 100px;
     row-gap: 70px;
+    flex-wrap: wrap;
     margin: 100px auto 0 auto;
-  }
+}
 
-  .imageLight,
-  .imageDark {
-    display: none;
-  }
 
-  html[data-theme="light"] .imageLight {
-    display: inline-block !important;
-  }
 
-  html[data-theme="dark"] .imageDark {
-    display: inline-block !important;
-  }
+/* section Projects */
 
-  /*
-*
-* SECTION PROJECTS
-*
-*/
+/* https://getcssscan.com/css-box-shadow-examples    Para ir buscar o codigo CSS para as nossas boxs Shadows */
 
-  .sectionProjects header {
+.sectionProjects header{
     text-align: center;
-  }
+}
 
-  .sectionProjects header h2 {
+.sectionProjects header h2{
     margin-bottom: 10px;
-  }
-  .sectionProjects header h3 {
-    margin-top: 0;
-  }
+}
 
-  .sectionProjects .projectsContainer {
+.sectionProjects header h3{
+    margin-top: 0;
+}
+
+.sectionProjects .projectsContainer{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
     column-gap: 40px;
     row-gap: 60px;
+    flex-wrap: wrap;
     margin-top: 100px;
-  }
+}
 
-  .projectBox {
+.projectBox{
     max-width: 375px;
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
-    background-color: var(--backgroundProjectBox);
-    box-shadow: rgba(000, 000, 000, 0.2) 0px 8px 24px;
-  }
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--backgroundProjectBox); 
 
-  .projectContent {
+}
+
+.projectContent{
     padding: 30px;
-  }
 
-  .projectContent h4 {
+}
+
+.projectContent h4{
     margin: 0;
     line-height: 2.8rem;
-  }
+}
 
-  .projectActions {
+.projectActions{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
+    align-items: center;
     margin-top: 20px;
-  }
+}
 
-  .projectActions .linkWithIcon {
+
+.projectActions .linkWithIcon{
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  .projectActions .linkWithIcon a {
+.projectActions .linkWithIcon a{
     color: var(--colorAnchor);
     text-decoration: underline;
     font-size: 1.6rem;
-    font-weight: var(--fontWeightRegular);
-  }
+    
+}
 
-  .projectActions .linkWithIcon:first-child svg path {
+.projectActions .linkWithIcon:first-child svg path{    /*corresponde ao icon do link "live preview */
     stroke: var(--colorAnchor);
-  }
+}
 
-  .projectActions .linkWithIcon:last-child svg path {
+
+.projectActions .linkWithIcon:last-child svg path{     /*corresponde ao icon do ghitube "view code" */
     fill: var(--colorAnchor);
-  }
+}
 
-  /* footerWrapper
-mainFooter
-mainFooterColumn */
 
-  /*
-*
-* FOOTER
-*
-*/
+/* footer */
 
-  .footerWrapper .mainFooter {
+
+.footerWrapper .mainFooter{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid var(--colorBorder);
+    border-bottom: 2px solid var(--grey03);
     height: 100px;
-  }
+}
 
-  /*
-*
-* MAIN FOOTER
-*
-*/
 
-  .footerWrapper .mainFooter .mainFooterColumn {
+
+/* main footer */
+
+
+.footerWrapper .mainFooter .mainFooterColumn{
     display: flex;
     align-items: center;
-  }
+}
 
-  .footerWrapper .mainFooter .mainFooterColumn.left {
-    justify-content: flex-start;
-  }
-
-  .footerWrapper .mainFooter .mainFooterColumn.left h2 {
-    font-size: 4rem;
-  }
-
-  .footerWrapper .mainFooter .mainFooterColumn.right {
+.footerWrapper .mainFooter .mainFooterColumn.right{
     justify-content: flex-end;
-  }
+}
 
-  .mainFooterColumn.right ul {
+.footerWrapper .mainFooter .mainFooterColumn.left{
+    justify-content: flex-start;
+}
+
+.mainFooterColumn.right ul{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-  }
+}
 
-  .mainFooterColumn.right a {
-    color: var(--colorP);
+.mainFooterColumn.right a{
+    color:var(--colorP);
     font-weight: var(--fontWeightLight);
     font-size: 1.8rem;
     text-decoration: none;
-  }
+}
 
-  /*
-*
-* MINI FOOTER
-*
-*/
 
-  .miniFooter {
+/* mini footer */
+
+.miniFooter{
     padding: 60px 0;
-  }
+}
 
-  .miniFooter nav ul {
+.miniFooter nav ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
     padding-left: 0;
     margin-top: 0;
-  }
+}
 
-  .miniFooter nav ul li a {
+
+.miniFooter nav ul li a{
     font-size: 2rem;
     color: var(--colorPrimaryMenu);
     text-decoration: none;
-  }
+}
 
-  .miniFooter nav ul {
-    list-style: none;
-  }
+.miniFooter .columnRight nav ul{
+    list-style: none; 
+}
 
-  /*
-* PAGES
-*/
 
-  .about-page section {
+/* PAGES */
+
+.about-page section {
     width: 100%;
     max-width: 700px;
     margin: 30px 0;
-  }
 
-  .about-page section header h2 {
+}
+
+.about-page section header h2{
     margin-bottom: 10px;
-  }
+}
 
-  .about-page section.sectionAbout h1 {
+.about-page section.sectionAbout h1{
     font-size: 4.2rem;
     font-weight: var(--fontWeightBold);
-  }
+}
 
-  /* expList
+/* expList
 expListItem
 expFirstLine
 expSecondLine */
 
-  .about-page .expList {
-    color: var(--colorP);
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
+.about-page .expList {
+  color: var(--colorP);
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
 
-  .about-page .expList .expListItem {
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--colorBorder);
-  }
+.about-page .expList .expListItem {
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--colorBorder);
+}
 
-  .about-page .expList .expFirstLine {
+.about-page .expList .expFirstLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-page .expList .expFirstLine h3 {
+  font-size: 2rem;
+  font-weight: var(--fontWeightRegular);
+}
+
+.about-page .expBadge {
+  background-color: var(--green02);
+  color: var(--green01);
+  padding: 7px 15px;
+  border-radius: 100px;
+  cursor: default;
+  font-size: 0.9rem;
+  font-weight: var(--fontWeightMedium);
+}
+
+.about-page .expList .expSecondLine{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .about-page .expList .expFirstLine h3 {
-    font-size: 2rem;
-    font-weight: var(--fontWeightRegular);
-  }
-
-  .about-page .expBadge {
-    background-color: var(--green02);
-    color: var(--green01);
-    padding: 7px 15px;
-    border-radius: 100px;
-    cursor: default;
-    font-size: 0.9rem;
-    font-weight: var(--fontWeightMedium);
-  }
-
-  .about-page .expList .expSecondLine {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .about-page .expList .expSecondLine > div {
+.about-page .expList .expSecondLine > div{
     display: flex;
     align-items: center;
     gap: 5px;
-  }
+}
 
-  .about-page .expList .expSecondLine {
+.about-page .expList .expSecondLine{
     font-size: 1.2rem;
     font-weight: var(--fontWeightMedium);
     color: var(--colorP);
-  }
+}
 
-  .stack-page .sectionStack header {
+/* pagina Stack */
+
+.stack-page .sectionStack header{
     text-align: left;
-  }
+}
 
-  .projects-page .sectionProjects header {
+
+.stack-page .stackImagesContainer {
+    width: initial;
+    column-gap: 100px;
+}
+
+
+/* pagina projetos */
+
+.projects-page .sectionProjects header{
     text-align: left;
-  }
+}
 
-  .contact-page .sectionContact {
+/* pagina contactos*/
+
+
+.contact-page .sectionContact {
     margin: 200px 0;
     text-align: center;
-  }
+}
 
-  .contact-page .sectionContact h1 {
+.contact-page .sectionContact h1{
     margin-bottom: 0;
-  }
+}
 
-  .contact-page .sectionContact .contentEmail {
+.contact-page .sectionContact .content-email {
     background: var(--primaryGradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5.8rem;
     font-weight: var(--fontWeightBold);
-  }
 }
