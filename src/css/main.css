@@ -66,6 +66,14 @@ section{
     margin: 200px 0;
 }
 
+/* MOBILE*/
+.primaryHeader{
+    position: relative;
+}
+
+/* DESKTOP*/
+@media (min-width: 769px)  {
+
 .primaryHeader{
     display: flex;
     justify-content:space-between;
@@ -118,7 +126,8 @@ section{
     list-style: none;
 }
 .container{
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -129,7 +138,8 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -462,4 +472,5 @@ expSecondLine */
     -webkit-text-fill-color: transparent;
     font-size: 5.8rem;
     font-weight: var(--fontWeightBold);
+}
 }
