@@ -43,6 +43,7 @@ html[data-theme="light"]{
     --colorText: var(--blue01);
     --colorAnchor: var(--black);
     --colorBorder: #ebeaed;
+    --colorBtnOpenMenuMobile:var(--blue01);
 }
 
 
@@ -58,4 +59,5 @@ html[data-theme="dark"]{
     --colorText: var(--white);
     --colorAnchor: var(--white);
     --colorBorder: #454545;
+    --colorBtnOpenMenuMobile: var(--white);
 }
