@@ -1,7 +1,7 @@
 @import url("_variables.css");
 
 
-html{
+html{ 
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
 }
@@ -71,9 +71,6 @@ section{
     margin: 100px 0;
 }
 
-
-
-
 /* MOBILE*/
 .primaryHeader .columnRight nav{
     display: none;
@@ -116,10 +113,17 @@ section{
     stroke:var(--colorBtnOpenMenuMobile) ;
 }
 
+.container{
+    max-width: calc(100% - 30px);
+    max-width: 1280px;
+    margin: 0 auto;
+} 
+
+
 /* section banner Mobile */
 
 .sectionBanner{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -145,7 +149,7 @@ section{
 }
 
 .sectionBanner .columnRight img{
-    width: calc(100% - 9px);
+     width: calc(100% - 9px); 
     height: auto;
     border-radius: 100%;
 }
@@ -177,7 +181,7 @@ section{
 
 }
 
-/* Stack */
+/* Stack mobile */
 
 .sectionStack header{
     text-align: left;
@@ -205,18 +209,11 @@ section{
     width: 60px;
 }
 
-.container{
-    width: calc(100% - 30px);
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 
 /* DESKTOP*/
 @media (min-width: 769px)  {
 
-
- /* Tipografia desktop */
+    /* tipografia desktop */
 
 h1{
     font-size: 5.8rem;
@@ -263,8 +260,6 @@ section{
 }
 
 
-
-
 .primaryHeader .columnRight nav{
     display: flex;
     justify-content: flex-end;
@@ -303,38 +298,28 @@ section{
     height: calc(auto - 15px);
 }
 
-
-
-/* Stack */
+/* Stack Desktop*/
 
 .sectionStack header{
     text-align: center;
 }
 
-.sectionStack .stackImagesContainer img{
-    width: 120px;
+
+.sectionStack .stackImagesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 70px;
+    flex-wrap: wrap;
+    margin: 100px auto 0 auto;
 }
 
 .sectionStack .stackImagesContainer{
-
     column-gap: 100px;
     margin: 100px auto 0 auto;
 }
 }
-
-.imageLight,
-.imageDark{
-    display: none;
-}
-
-html[data-theme="Light"] .imageLight{
-    display: inline-block !important;
-}
-
-html[data-theme="dark"] .imageDark{
-    display: inline-block !important;
-}
-
 
 
 /* section Projects */
