@@ -34,3 +34,29 @@ function toggleDarkMode() {
     setTheme("dark");
   }
 }
+
+function openMenuMobile() {
+  // Encontra o elemento;
+  const drawerMenu = document.querySelector(".drawerMenu");
+
+  //verifica se o elemento existe
+  if (!drawerMenu) return;
+
+  // Executa a lógica
+  //Adiciona a class opened
+  drawerMenu.classList.add("opened");
+}
+
+
+function closeMenuMobile() {
+  // Encontra o elemento;
+  const drawerMenu = document.querySelector(".drawerMenu");
+
+  //verifica se o elemento existe
+  if (!drawerMenu) return;
+
+  // Executa a lógica
+  //remover a class opened
+  drawerMenu.classList.remove("opened");
+}
+

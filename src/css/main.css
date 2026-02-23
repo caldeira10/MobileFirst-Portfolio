@@ -76,7 +76,7 @@ section {
 }
 
 /* MOBILE*/
-.primaryHeader .columnRight nav {
+.primaryHeader .columnRight>nav {
     display: none;
 }
 
@@ -109,12 +109,16 @@ section {
     align-items: center;
 }
 
-.primaryHeader .columnRight .btnOpenMenuMobile {
+.btnOpenMenuMobile,
+.btnCloseMenuMobile {
     background-color: transparent;
     border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
-.primaryHeader .columnRight .btnOpenMenuMobile svg path {
+.btnOpenMenuMobile svg path,
+.btnCloseMenuMobile svg path {
     stroke: var(--colorBtnOpenMenuMobile);
 }
 
@@ -384,6 +388,51 @@ section {
     color: var(--grey05) !important;
 }
 
+/* MENU MOBILE (FOR MOBILE) */
+
+/* .menuMobileWrapper {} */
+
+.drawerMenu {
+    right: -300px;
+    top: 0;
+    position: fixed;
+    background-color: var(--background);
+    width: 100%;
+    max-width: calc(300px - 60px);
+    height: calc(100vh - 60px);
+    z-index: 100;
+    padding: 30px;
+    display: flex;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.24);
+}
+
+.drawerMenu.opened {
+    right: 0;
+    visibility: visible;
+}
+
+.drawerMenu nav ul li a {
+    font-size: 2.4rem;
+    line-height: calc(2.4rem + 2.6rem);
+    color: var(--colorPrimaryMenu);
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid var(--colorBorder);
+}
+
+.drawerMenu nav ul li:last-child a {
+    border-bottom: none;
+}
+
+.drawerMenu nav ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 /* START MEDIA QUERIES FOR SECTION PROJECTS */
 @media (min-width: 576px) {
@@ -463,6 +512,10 @@ section {
         margin: 200px 0;
     }
 
+    .primaryHeader {
+        margin-top: 50px;
+    }
+
 
     .primaryHeader .columnRight .btnOpenMenuMobile {
         display: none;
@@ -500,7 +553,7 @@ section {
 
     .container {
         max-width: calc(100% - 30px);
-        max-width: 1280px;
+        max-width: 1440px;
         /* margin: 0 auto; */
         margin: 15px;
     }
@@ -595,6 +648,12 @@ section {
 
     .miniFooter .columnRight nav ul {
         list-style: none;
+    }
+
+    /* MENU MOBILE (FOR DESKTOP) */
+
+    .drawerMenu {
+        display: none;
     }
 }
 
