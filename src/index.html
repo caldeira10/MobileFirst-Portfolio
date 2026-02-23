@@ -62,15 +62,92 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="btnOpenMenuMobile">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.33331 6.66667H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M5.33331 16H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M5.33331 25.3333H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                <div class="menuMobileWrapper">
+                    <button type="button" onclick="openMenuMobile()" class="btnOpenMenuMobile">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.33331 6.66667H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.33331 16H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.33331 25.3333H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+                    <div class="drawerMenu">
+                        <div>
+                            <button type="button" onclick="closeMenuMobile()" class="btnCloseMenuMobile">
+                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.2917 4.625H7.70833C6.00546 4.625 4.625 6.00546 4.625 7.70833V29.2917C4.625 30.9945 6.00546 32.375 7.70833 32.375H29.2917C30.9945 32.375 32.375 30.9945 32.375 29.2917V7.70833C32.375 6.00546 30.9945 4.625 29.2917 4.625Z"
+                                        stroke="#42446E" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M23.125 4.625V32.375" stroke="#42446E" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.3334 13.875L16.9584 18.5L12.3334 23.125" stroke="#42446E"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="sobremim.html">Sobre mim</a>
+                                    </li>
+                                    <li>
+                                        <a href="stack.html">Stack</a>
+                                    </li>
+                                    <li>
+                                        <a href="projetos.html">Projetos</a>
+                                    </li>
+                                    <li>
+                                        <a href="contactos.html">Contacto</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="footerWrapper">
+                            <div class="mainFooter">
+                                <div class="mainFooterColumn left">
+                                    <h2>LOGO</h2>
+                                </div>
+                                <div class="mainFooterColumn right">
+                                    <div>
+                                        <a href="mailto:goncalocaldeira_@hotmail.com">goncalocaldeira_@hotmail.com</a>
+                                    </div>
+
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="linkAssuciado">
+                                                    <img src="assets/icon-github.png" alt="icon github" width="30"
+                                                        height="30" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="linkAssuciado">
+                                                    <img src="assets/icon-twitter.png" alt="icon twitter" width="30"
+                                                        height="30" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="linkAssuciado">
+                                                    <img src="assets/icon-linkedin.png" alt="icon linkedin" width="30"
+                                                        height="30" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 </button>
             </div>
         </header>
