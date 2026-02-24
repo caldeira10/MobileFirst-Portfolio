@@ -1,34 +1,30 @@
 <!Doctype html>
 <html lang="pt" data-theme="light">
-    <head>
-        <title>Hello World</title>
-        <meta charset="UTF-8"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-              rel="stylesheet"/>
-        <link rel="stylesheet" href="/src/css/main.css"/>
-        <meta name="viewport" content="width=device-width, inicial-scale=1.0"/>
-    </head>
 
-    <body class="stack-page">
-        <div class="container">
-          <header class="primaryHeader">
-            
+<head>
+    <title>Hello World</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+</head>
+
+<body class="stack-page">
+    <div class="container">
+        <header class="primaryHeader">
+
             <div class="columnLeft">
-                <h2>LOGO</h2>
+                <a href="index.html">LOGO</a>
                 <button id="toggleDarkMode" onclick="toggleDarkMode()">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    stroke-width="2" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    class="lucide lucide-moon">
-                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-moon">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg>
                 </button>
             </div>
             <div class="columnRight">
@@ -51,58 +47,124 @@
                         </li>
                         <li>
                             <a href="linkAssuciado">
-                            <img src="assets/icon-github.png" alt="icon github" width="30" height="30"/>
-                           </a>
-                        </li>
-                        <li>
-                            <a href="linkAssuciado">
-                            <img src="assets/icon-twitter.png" alt="icon twitter" width="30" height="30"/>
+                                <img src="assets/icon-github.png" alt="icon github" width="30" height="30" />
                             </a>
                         </li>
                         <li>
                             <a href="linkAssuciado">
-                            <img 
-                            src="assets/icon-linkedin.png" 
-                            alt="icon linkedin" 
-                            width="30" 
-                            height="30"/>
+                                <img src="assets/icon-twitter.png" alt="icon twitter" width="30" height="30" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="linkAssuciado">
+                                <img src="assets/icon-linkedin.png" alt="icon linkedin" width="30" height="30" />
                             </a>
                         </li>
                     </ul>
                 </nav>
+                <div class="menuMobileWrapper">
+                    <button type="button" onclick="openMenuMobile()" class="btnOpenMenuMobile">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.33331 6.66667H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.33331 16H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.33331 25.3333H26.6666" stroke="#42446E" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+                    <div class="drawerMenu">
+                        <div>
+                            <button type="button" onclick="closeMenuMobile()" class="btnCloseMenuMobile">
+                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.2917 4.625H7.70833C6.00546 4.625 4.625 6.00546 4.625 7.70833V29.2917C4.625 30.9945 6.00546 32.375 7.70833 32.375H29.2917C30.9945 32.375 32.375 30.9945 32.375 29.2917V7.70833C32.375 6.00546 30.9945 4.625 29.2917 4.625Z"
+                                        stroke="#42446E" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M23.125 4.625V32.375" stroke="#42446E" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.3334 13.875L16.9584 18.5L12.3334 23.125" stroke="#42446E"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="sobremim.html">Sobre mim</a>
+                                    </li>
+                                    <li>
+                                        <a href="stack.html">Stack</a>
+                                    </li>
+                                    <li>
+                                        <a href="projetos.html">Projetos</a>
+                                    </li>
+                                    <li>
+                                        <a href="contactos.html">Contacto</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="footerWrapper">
+                            <div class="mainFooter">
+                                <div class="mainFooterColumn left">
+                                    <h2>LOGO</h2>
+                                </div>
+                                <div class="mainFooterColumn right">
+                                    <div>
+                                        <a href="mailto:goncalocaldeira_@hotmail.com">goncalocaldeira_@hotmail.com</a>
+                                    </div>
+
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="linkAssuciado">
+                                                    <img src="assets/icon-github.png" alt="icon github" width="30"
+                                                        height="30" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="linkAssuciado">
+                                                    <img src="assets/icon-twitter.png" alt="icon twitter" width="30"
+                                                        height="30" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="linkAssuciado">
+                                                    <img src="assets/icon-linkedin.png" alt="icon linkedin" width="30"
+                                                        height="30" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </button>
             </div>
         </header>
-        <main> 
+        <main>
             <section class="sectionStack">
                 <header>
                     <h2>A minha stack</h2>
                     <h3>Tecnologias com que trabalho</h3>
                 </header>
                 <div class="stackImagesContainer">
-                    <img 
-                    src="assets/vscode-icons_file-type-html.png" 
-                    alt="html" 
-                    width="120"/>
+                    <img src="assets/vscode-icons_file-type-html.png" alt="html" width="120" />
 
-                    <img 
-                    src="assets/vscode-icons_file-type-css.png" 
-                    alt="css" 
-                    width="120"/>
+                    <img src="assets/vscode-icons_file-type-css.png" alt="css" width="120" />
 
-                    <img 
-                    src="assets/vscode-icons_file-type-js-official.png" 
-                    alt="javascript" 
-                    width="120"/>
+                    <img src="assets/vscode-icons_file-type-js-official.png" alt="javascript" width="120" />
 
-                    <img 
-                    src="assets/logos_react.png" 
-                    alt="react" 
-                    width="120"/>
-                    
-                    <img 
-                    src="assets/vscode-icons_file-type-vscode.png" 
-                    alt="vscode" 
-                    width="120"/>
+                    <img src="assets/logos_react.png" alt="react" width="120" />
+
+                    <img src="assets/vscode-icons_file-type-vscode.png" alt="vscode" width="120" />
 
                     <!-- <img 
                     src="assets/electron.png" 
@@ -139,50 +201,46 @@
                     alt="github" 
                     width="120"/> -->
 
-                    
+
 
                 </div>
             </section>
             <!--Conteudo pagina Sobre mim-->
-            
-        </main> 
-         <footer class="footerWrapper">
-                <div class="mainFooter">
+
+        </main>
+        <footer class="footerWrapper">
+            <div class="mainFooter">
                 <div class="mainFooterColumn left">
                     <h2>LOGO</h2>
                 </div>
                 <div class="mainFooterColumn right">
-                   <div>
-                    <a href="mailto:Info@example.com">Info@example.com</a>
-                   </div>
-                
-                  <div>
-                    <ul>
-                        <li>
-                            <a href="linkAssuciado">
-                            <img src="assets/icon-github.png" alt="icon github" width="30" height="30"/>
-                           </a>
-                        </li>
-                        <li>
-                            <a href="linkAssuciado">
-                            <img src="assets/icon-twitter.png" alt="icon twitter" width="30" height="30"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="linkAssuciado">
-                            <img 
-                            src="assets/icon-linkedin.png" 
-                            alt="icon linkedin" 
-                            width="30" 
-                            height="30"/>
-                            </a>
-                        </li>
-                    </ul>
-                 </div> 
+                    <div>
+                        <a href="mailto:Info@example.com">Info@example.com</a>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="linkAssuciado">
+                                    <img src="assets/icon-github.png" alt="icon github" width="30" height="30" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="linkAssuciado">
+                                    <img src="assets/icon-twitter.png" alt="icon twitter" width="30" height="30" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="linkAssuciado">
+                                    <img src="assets/icon-linkedin.png" alt="icon linkedin" width="30" height="30" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                </div>
-                <div class="miniFooter">
-                                    <nav>
+            </div>
+            <div class="miniFooter">
+                <nav>
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
@@ -201,13 +259,14 @@
                         </li>
                     </ul>
                 </nav>
-                </div>
+            </div>
         </footer>
-        </div>
-        
-        
-        <script src="/src/js/main.js"></script>
-    </body>
+    </div>
+
+
+    <script src="/src/js/main.js"></script>
+</body>
+
 </html>
 
 <!-- PARA IR BUSCAR ICONS- www.lucide.com -->
